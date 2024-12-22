@@ -26,6 +26,17 @@ services:
     volumes:
       - ./db_service:/app  # Локальная папка с исходниками сервиса БД
 
+  new_service:
+    networks:
+      - default
+    build:
+      context: ./new_service
+    container_name: new_service
+    ports:
+      - "8091:8091"  # Порт для взаимодействия с базой данных
+    volumes:
+      - ./new_service:/app  # Локальная папка с исходниками сервиса БД
+
   auth_service:
     networks:
       - default

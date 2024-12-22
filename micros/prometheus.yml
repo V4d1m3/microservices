@@ -9,6 +9,13 @@ scrape_configs:
       - target_label: service
         replacement: 'db_service'
 
+  - job_name: 'new_service'
+    static_configs:
+      - targets: [ 'new_service:8091' ]
+    relabel_configs:
+      - target_label: service
+        replacement: 'new_service'
+
   - job_name: 'auth_service'
     static_configs:
       - targets: ['auth_service:8001']
