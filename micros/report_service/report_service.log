@@ -1,0 +1,137 @@
+2024-12-19 16:52:19,599 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 16:52:19,600 - routes - INFO - Fetching user stats for user 5
+2024-12-19 16:52:19,642 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/?user_id=5 "HTTP/1.1 200 OK"
+2024-12-19 16:52:19,681 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/?user_id=5 "HTTP/1.1 200 OK"
+2024-12-19 16:52:19,706 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/?user_id=5 "HTTP/1.1 405 Method Not Allowed"
+2024-12-19 16:52:42,996 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 16:52:42,996 - routes - INFO - Fetching announcements for user 5
+2024-12-19 16:52:43,022 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/?user_id=5 "HTTP/1.1 200 OK"
+2024-12-19 16:52:43,023 - routes - INFO - Announcements fetched for user 5
+2024-12-19 17:52:24,043 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 17:52:24,044 - routes - INFO - Fetching user stats for user 1
+2024-12-19 17:52:24,081 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-12-19 17:52:24,111 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/?user_id=1 "HTTP/1.1 200 OK"
+2024-12-19 17:52:24,135 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/?user_id=1 "HTTP/1.1 405 Method Not Allowed"
+2024-12-19 17:52:33,015 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 17:52:33,017 - routes - INFO - Fetching announcements for user 1
+2024-12-19 17:52:33,045 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/?user_id=1 "HTTP/1.1 200 OK"
+2024-12-19 17:52:33,046 - routes - INFO - Announcements fetched for user 1
+2024-12-19 18:40:27,105 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 18:40:27,107 - routes - INFO - Fetching user stats for user 7
+2024-12-19 18:40:27,146 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/?user_id=7 "HTTP/1.1 200 OK"
+2024-12-19 18:40:27,175 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/?user_id=7 "HTTP/1.1 200 OK"
+2024-12-19 18:40:27,202 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/?user_id=7 "HTTP/1.1 405 Method Not Allowed"
+2024-12-19 18:40:50,675 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 18:40:50,677 - routes - INFO - Fetching responses for user 7
+2024-12-19 18:40:50,709 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/?user_id=7 "HTTP/1.1 405 Method Not Allowed"
+2024-12-19 19:20:21,894 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:20:21,895 - routes - INFO - Fetching user stats for user 7
+2024-12-19 19:20:21,927 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/?user_id=7 "HTTP/1.1 200 OK"
+2024-12-19 19:20:21,957 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/?user_id=7 "HTTP/1.1 200 OK"
+2024-12-19 19:20:21,985 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/?user_id=7 "HTTP/1.1 405 Method Not Allowed"
+2024-12-19 19:20:39,721 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:20:39,723 - routes - INFO - Fetching announcements for user 7
+2024-12-19 19:20:39,760 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/?user_id=7 "HTTP/1.1 200 OK"
+2024-12-19 19:20:39,762 - routes - INFO - Announcements fetched for user 7
+2024-12-19 19:20:47,807 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:20:47,810 - routes - INFO - Fetching responses for user 7
+2024-12-19 19:20:47,858 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/?user_id=7 "HTTP/1.1 405 Method Not Allowed"
+2024-12-19 19:28:20,230 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:28:20,231 - routes - INFO - Fetching responses for user 7
+2024-12-19 19:28:20,258 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/user/?user_id=7 "HTTP/1.1 404 Not Found"
+2024-12-19 19:28:27,215 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:28:27,217 - routes - INFO - Fetching user stats for user 7
+2024-12-19 19:28:27,256 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/?user_id=7 "HTTP/1.1 200 OK"
+2024-12-19 19:28:27,287 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/?user_id=7 "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 19:28:36,829 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:28:36,830 - routes - INFO - Fetching announcements for user 7
+2024-12-19 19:28:36,871 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/?user_id=7 "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 19:29:35,552 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:29:35,554 - routes - INFO - Fetching user stats for user 7
+2024-12-19 19:29:35,610 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/?user_id=7 "HTTP/1.1 200 OK"
+2024-12-19 19:29:35,638 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/?user_id=7 "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 19:29:41,576 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:29:41,578 - routes - INFO - Fetching announcements for user 7
+2024-12-19 19:29:41,607 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/?user_id=7 "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 19:29:50,272 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:29:50,273 - routes - INFO - Fetching responses for user 7
+2024-12-19 19:29:50,309 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/user/?user_id=7 "HTTP/1.1 404 Not Found"
+2024-12-19 20:30:07,964 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 20:30:07,966 - routes - INFO - Fetching user stats for user 7
+2024-12-19 20:30:08,003 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/?user_id=7 "HTTP/1.1 200 OK"
+2024-12-19 20:30:08,032 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/?user_id=7 "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 20:30:20,426 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 20:30:20,427 - routes - INFO - Fetching announcements for user 7
+2024-12-19 20:30:20,470 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/?user_id=7 "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 20:30:29,340 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 20:30:29,342 - routes - INFO - Fetching responses for user 7
+2024-12-19 20:30:29,375 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/user/?user_id=7 "HTTP/1.1 404 Not Found"
+2024-12-19 21:39:39,573 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 21:39:39,574 - routes - INFO - Fetching user announcements for user 7
+2024-12-19 21:39:39,605 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/?user_id=7 "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 21:49:26,547 - routes - INFO - Starting try to fetch announcements for type True
+2024-12-19 21:49:26,613 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/type/?item_type=true "HTTP/1.1 200 OK"
+2024-12-19 21:49:26,614 - routes - INFO - Successfully fetched announcements for type True
+2024-12-19 21:49:46,130 - routes - INFO - Fetching responses for announcement 1
+2024-12-19 21:49:46,160 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/announcement/?announcement_id=1 "HTTP/1.1 404 Not Found"
+2024-12-19 21:49:51,976 - routes - INFO - Fetching responses for announcement 2
+2024-12-19 21:49:52,009 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/announcement/?announcement_id=2 "HTTP/1.1 404 Not Found"
+2024-12-19 21:50:05,589 - routes - INFO - Fetching responses for user 7
+2024-12-19 21:50:05,616 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/user/?user_id=7 "HTTP/1.1 404 Not Found"
+2024-12-19 21:50:14,513 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 21:50:14,514 - routes - INFO - Fetching user announcements for user 7
+2024-12-19 21:50:14,542 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/?user_id=7 "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 22:01:36,358 - routes - INFO - Fetching user announcements for user 7
+2024-12-19 22:01:36,428 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/7 "HTTP/1.1 200 OK"
+2024-12-19 22:01:36,429 - routes - INFO - User announcements fetched for user 7
+2024-12-19 22:01:58,070 - routes - INFO - Starting try to fetch announcements for type True
+2024-12-19 22:01:58,116 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/type/?item_type=true "HTTP/1.1 200 OK"
+2024-12-19 22:01:58,119 - routes - INFO - Successfully fetched announcements for type True
+2024-12-20 00:50:22,220 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 00:50:22,220 - utils - INFO - User successfully authorized
+2024-12-20 00:50:22,221 - routes - INFO - Fetching announcements of type True
+2024-12-20 00:50:22,254 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/type/?item_type=true "HTTP/1.1 200 OK"
+2024-12-20 00:50:22,255 - utils - INFO - Announcements of type True fetched successfully
+2024-12-20 00:50:22,255 - routes - INFO - Successfully fetched announcements for type True
+2024-12-20 00:50:35,711 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 00:50:35,712 - utils - INFO - User successfully authorized
+2024-12-20 00:50:35,713 - routes - INFO - Fetching announcements for user 1
+2024-12-20 00:50:35,747 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/1 "HTTP/1.1 404 Not Found"
+2024-12-20 00:50:35,747 - utils - WARNING - Announcements not found for user 1: {'detail': 'No announcements found for this user'}
+2024-12-20 00:50:35,748 - routes - ERROR - Error fetching announcements for user 1: Announcements not found
+2024-12-20 00:50:40,171 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 00:50:40,172 - utils - INFO - User successfully authorized
+2024-12-20 00:50:40,173 - routes - INFO - Fetching announcements for user 2
+2024-12-20 00:50:40,206 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/user/2 "HTTP/1.1 200 OK"
+2024-12-20 00:50:40,207 - utils - INFO - Announcements fetched for user 2
+2024-12-20 00:50:40,207 - routes - INFO - Successfully fetched announcements for user 2
+2024-12-20 00:50:53,645 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 00:50:53,646 - utils - INFO - User successfully authorized
+2024-12-20 00:50:53,646 - routes - INFO - Fetching responses for announcement 1
+2024-12-20 00:50:53,682 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/announcement/1 "HTTP/1.1 200 OK"
+2024-12-20 00:50:53,682 - utils - INFO - Responses fetched for announcement 1
+2024-12-20 00:50:53,683 - routes - INFO - Successfully fetched responses for announcement 1
+2024-12-20 00:51:13,017 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 00:51:13,018 - utils - INFO - User successfully authorized
+2024-12-20 00:51:13,019 - routes - INFO - Fetching responses for user 7
+2024-12-20 00:51:13,053 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/user/7 "HTTP/1.1 200 OK"
+2024-12-20 00:51:13,054 - utils - INFO - Responses fetched for user 7
+2024-12-20 00:51:13,054 - routes - INFO - Successfully fetched responses for user 7
+2024-12-20 07:50:39,807 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 07:50:39,807 - utils - INFO - User successfully authorized
+2024-12-20 07:50:39,809 - routes - INFO - Fetching responses for user 0
+2024-12-20 07:50:39,839 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/user/0 "HTTP/1.1 404 Not Found"
+2024-12-20 07:50:39,841 - utils - WARNING - Responses not found for user 0: {'detail': 'No responses found for this user'}
+2024-12-20 07:50:39,841 - routes - ERROR - Error fetching responses for user 0: Responses not found
+2024-12-20 07:50:45,659 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 07:50:45,659 - utils - INFO - User successfully authorized
+2024-12-20 07:50:45,660 - routes - INFO - Fetching responses for user 12
+2024-12-20 07:50:45,697 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/user/12 "HTTP/1.1 200 OK"
+2024-12-20 07:50:45,698 - utils - INFO - Responses fetched for user 12
+2024-12-20 07:50:45,700 - routes - INFO - Successfully fetched responses for user 12
+2024-12-20 07:51:10,698 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 07:51:10,699 - utils - INFO - User successfully authorized
+2024-12-20 07:51:10,700 - routes - INFO - Fetching responses for announcement 1
+2024-12-20 07:51:10,743 - httpx - INFO - HTTP Request: GET http://db_service:8090/responses/announcement/1 "HTTP/1.1 200 OK"
+2024-12-20 07:51:10,743 - utils - INFO - Responses fetched for announcement 1
+2024-12-20 07:51:10,744 - routes - INFO - Successfully fetched responses for announcement 1

@@ -1,0 +1,40 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'db_service'
+    static_configs:
+      - targets: ['db_service:8090']
+    relabel_configs:
+      - target_label: service
+        replacement: 'db_service'
+
+  - job_name: 'auth_service'
+    static_configs:
+      - targets: ['auth_service:8001']
+    relabel_configs:
+      - target_label: service
+        replacement: 'auth_service'
+
+  - job_name: 'announcement_service'
+    static_configs:
+      - targets: ['announcement_service:8033']
+    relabel_configs:
+      - target_label: service
+        replacement: 'announcement_service'
+
+  - job_name: 'report_service'
+    static_configs:
+      - targets: ['report_service:8044']
+    relabel_configs:
+      - target_label: service
+        replacement: 'report_service'
+
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: [ 'cadvisor:8080' ]
+    relabel_configs:
+      - source_labels: [ __meta_docker_container_name ]
+        regex: '/(.*)'
+        target_label: name
+        replacement: '$1'

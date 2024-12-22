@@ -1,0 +1,308 @@
+2024-12-19 01:42:49,539 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 15:40:48,663 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 16:39:25,728 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 17:29:12,723 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 17:30:38,157 - utils - INFO - Verifying user token
+2024-12-19 17:30:38,231 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 401 Unauthorized"
+2024-12-19 17:30:38,232 - utils - ERROR - Token verification failed
+2024-12-19 17:30:59,637 - utils - INFO - Verifying user token
+2024-12-19 17:30:59,662 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 17:30:59,663 - utils - INFO - Token verified successfully
+2024-12-19 17:30:59,670 - routes - INFO - User 1 is responding to announcement 1 with message: string
+2024-12-19 17:30:59,671 - utils - INFO - Responding to announcement 1 by user 1
+2024-12-19 17:30:59,692 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/respond/ "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 17:30:59,693 - utils - ERROR - Failed to respond to announcement
+2024-12-19 17:31:23,966 - utils - INFO - Verifying user token
+2024-12-19 17:31:23,991 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 17:31:23,991 - utils - INFO - Token verified successfully
+2024-12-19 17:31:23,992 - routes - INFO - User 1 is responding to announcement 2 with message: string
+2024-12-19 17:31:23,992 - utils - INFO - Responding to announcement 2 by user 1
+2024-12-19 17:31:24,014 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/respond/ "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 17:31:24,015 - utils - ERROR - Failed to respond to announcement
+2024-12-19 17:31:32,539 - utils - INFO - Verifying user token
+2024-12-19 17:31:32,570 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 17:31:32,572 - utils - INFO - Token verified successfully
+2024-12-19 17:31:32,572 - routes - INFO - User 1 is responding to announcement 2 with message: string
+2024-12-19 17:31:32,573 - utils - INFO - Responding to announcement 2 by user 1
+2024-12-19 17:31:32,596 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/respond/ "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 17:31:32,597 - utils - ERROR - Failed to respond to announcement
+2024-12-19 17:31:43,925 - routes - INFO - Fetching all announcements
+2024-12-19 17:31:43,926 - utils - INFO - Fetching all announcements from database
+2024-12-19 17:31:43,969 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-19 17:31:43,971 - utils - INFO - Announcements fetched successfully
+2024-12-19 17:32:20,458 - routes - INFO - Fetching all announcements
+2024-12-19 17:32:20,458 - utils - INFO - Fetching all announcements from database
+2024-12-19 17:32:20,486 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-19 17:32:20,487 - utils - INFO - Announcements fetched successfully
+2024-12-19 17:32:39,574 - utils - INFO - Verifying user token
+2024-12-19 17:32:39,600 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 17:32:39,601 - utils - INFO - Token verified successfully
+2024-12-19 17:32:39,602 - routes - INFO - User 1 is responding to announcement 2 with message: string
+2024-12-19 17:32:39,602 - utils - INFO - Responding to announcement 2 by user 1
+2024-12-19 17:32:39,626 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/respond/ "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 17:32:39,627 - utils - ERROR - Failed to respond to announcement
+2024-12-19 17:33:09,837 - utils - INFO - Verifying user token
+2024-12-19 17:33:09,867 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 17:33:09,868 - utils - INFO - Token verified successfully
+2024-12-19 17:33:09,872 - routes - INFO - User 1 is creating an announcement: something
+2024-12-19 17:33:09,872 - utils - INFO - Adding new announcement for user 1
+2024-12-19 17:33:35,246 - routes - INFO - Fetching announcement with ID 1
+2024-12-19 17:33:35,247 - utils - INFO - Fetching announcement with ID 1
+2024-12-19 17:33:35,281 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/1 "HTTP/1.1 200 OK"
+2024-12-19 17:33:35,282 - utils - INFO - Announcement with ID 1 fetched successfully
+2024-12-19 17:33:42,493 - routes - INFO - Fetching announcement with ID 3
+2024-12-19 17:33:42,493 - utils - INFO - Fetching announcement with ID 3
+2024-12-19 17:33:42,522 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/3 "HTTP/1.1 404 Not Found"
+2024-12-19 17:33:42,522 - utils - ERROR - Announcement not found
+2024-12-19 17:33:46,740 - routes - INFO - Fetching announcement with ID 2
+2024-12-19 17:33:46,741 - utils - INFO - Fetching announcement with ID 2
+2024-12-19 17:33:46,790 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/2 "HTTP/1.1 200 OK"
+2024-12-19 17:33:46,791 - utils - INFO - Announcement with ID 2 fetched successfully
+2024-12-19 17:36:43,048 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 17:51:34,672 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 17:52:53,018 - routes - INFO - Fetching all announcements
+2024-12-19 17:52:53,019 - utils - INFO - Fetching all announcements from database
+2024-12-19 17:52:53,082 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-19 17:52:53,083 - utils - INFO - Announcements fetched successfully
+2024-12-19 17:53:18,621 - utils - INFO - Verifying user token
+2024-12-19 17:53:18,651 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 17:53:18,652 - utils - INFO - Token verified successfully
+2024-12-19 17:53:18,659 - routes - INFO - User 1 is creating an announcement: string
+2024-12-19 17:53:18,660 - utils - INFO - Adding new announcement for user 1
+2024-12-19 18:32:43,508 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 18:34:10,698 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 18:36:46,740 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 18:37:55,920 - routes - INFO - Fetching all announcements
+2024-12-19 18:37:55,921 - utils - INFO - Fetching all announcements from database
+2024-12-19 18:37:55,998 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-19 18:37:55,999 - utils - INFO - Announcements fetched successfully
+2024-12-19 18:38:19,702 - utils - INFO - Verifying user token
+2024-12-19 18:38:19,732 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 18:38:19,733 - utils - INFO - Token verified successfully
+2024-12-19 18:38:19,735 - routes - INFO - User 7 is creating an announcement: string
+2024-12-19 18:38:19,735 - utils - INFO - Adding new announcement for user 7
+2024-12-19 18:39:02,543 - routes - INFO - Fetching announcement with ID 1
+2024-12-19 18:39:02,543 - utils - INFO - Fetching announcement with ID 1
+2024-12-19 18:39:02,577 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/1 "HTTP/1.1 200 OK"
+2024-12-19 18:39:02,578 - utils - INFO - Announcement with ID 1 fetched successfully
+2024-12-19 18:40:02,029 - utils - INFO - Verifying user token
+2024-12-19 18:40:02,063 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 18:40:02,064 - utils - INFO - Token verified successfully
+2024-12-19 18:40:02,066 - routes - INFO - User 7 is responding to announcement 1 with message: string
+2024-12-19 18:40:02,066 - utils - INFO - Responding to announcement 1 by user 7
+2024-12-19 18:40:02,093 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/respond/ "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 18:40:02,093 - utils - ERROR - Failed to respond to announcement
+2024-12-19 18:50:09,160 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 18:51:05,199 - utils - INFO - Verifying user token
+2024-12-19 18:51:05,281 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 18:51:05,282 - utils - INFO - Token verified successfully
+2024-12-19 18:51:05,285 - routes - INFO - User 1 is creating an announcement: string
+2024-12-19 18:51:05,286 - utils - INFO - Adding new announcement for user 1
+2024-12-19 19:06:16,170 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 19:07:46,858 - routes - INFO - Fetching all announcements
+2024-12-19 19:07:46,859 - utils - INFO - Fetching all announcements from database
+2024-12-19 19:07:46,952 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-19 19:07:46,953 - utils - INFO - Announcements fetched successfully
+2024-12-19 19:08:08,363 - utils - INFO - Verifying user token
+2024-12-19 19:08:08,400 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:08:08,401 - utils - INFO - Token verified successfully
+2024-12-19 19:08:08,408 - routes - INFO - User 7 is creating an announcement: string
+2024-12-19 19:08:08,408 - utils - INFO - Adding new announcement for user 7: {'user_id': 7, 'item': 'string', 'place': 'string', 'type': True, 'time': datetime.datetime(2024, 12, 19, 19, 8, 1, 443000, tzinfo=TzInfo(UTC))}
+2024-12-19 19:08:08,464 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-19 19:08:08,465 - utils - INFO - Announcement added successfully with ID: 3
+2024-12-19 19:08:08,466 - routes - INFO - Announcement created with ID: 3
+2024-12-19 19:08:40,132 - utils - INFO - Verifying user token
+2024-12-19 19:08:40,177 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:08:40,178 - utils - INFO - Token verified successfully
+2024-12-19 19:08:40,180 - routes - INFO - User 7 is responding to announcement 1 with message: hello ...
+2024-12-19 19:08:40,180 - utils - INFO - Responding to announcement 1 by user 7
+2024-12-19 19:08:40,209 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/respond/ "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 19:08:40,210 - utils - ERROR - Failed to respond to announcement: 307
+2024-12-19 19:08:49,588 - utils - INFO - Verifying user token
+2024-12-19 19:08:49,623 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:08:49,624 - utils - INFO - Token verified successfully
+2024-12-19 19:08:49,626 - routes - INFO - User 7 is responding to announcement 1 with message: hello
+2024-12-19 19:08:49,626 - utils - INFO - Responding to announcement 1 by user 7
+2024-12-19 19:08:49,671 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/respond/ "HTTP/1.1 307 Temporary Redirect"
+2024-12-19 19:08:49,672 - utils - ERROR - Failed to respond to announcement: 307
+2024-12-19 19:08:55,489 - routes - INFO - Fetching all announcements
+2024-12-19 19:08:55,490 - utils - INFO - Fetching all announcements from database
+2024-12-19 19:08:55,521 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-19 19:08:55,522 - utils - INFO - Announcements fetched successfully
+2024-12-19 19:18:35,294 - main - INFO - Announcement Service завершает работу.
+2024-12-19 19:18:36,113 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 19:19:41,035 - utils - INFO - Verifying user token
+2024-12-19 19:19:41,109 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 19:19:41,110 - utils - INFO - Token verified successfully
+2024-12-19 19:19:41,112 - routes - INFO - User 7 is responding to announcement 1 with message: string
+2024-12-19 19:19:41,113 - utils - INFO - Responding to announcement 1 by user 7
+2024-12-19 19:19:41,184 - httpx - INFO - HTTP Request: POST http://db_service:8090/responses/ "HTTP/1.1 200 OK"
+2024-12-19 19:19:41,185 - utils - INFO - Response to announcement saved successfully
+2024-12-19 19:19:41,185 - rabbitmq_utils - INFO - Connecting to RabbitMQ...
+2024-12-19 19:19:41,192 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.19.0.2', 5672)
+2024-12-19 19:19:41,193 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.8', 55552), raddr=('172.19.0.2', 5672)>
+2024-12-19 19:19:41,194 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc73f791b20>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc73f791b20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-12-19 19:19:41,198 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc73f791b20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-19 19:19:41,198 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc73f791b20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-19 19:19:41,199 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc73f791b20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-19 19:19:41,199 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-12-19 19:19:41,201 - rabbitmq_utils - INFO - Queue 'notifications' declared successfully.
+2024-12-19 19:19:41,202 - rabbitmq_utils - INFO - [RabbitMQ] Message sent to queue 'notifications': {'user_id': 1, 'responding_user_id': 7, 'announcement_id': 1, 'content': 'User 7 responded to your announcement: string'}
+2024-12-19 19:19:41,202 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-12-19 19:19:41,202 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc73f791b20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-19 19:19:41,203 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc73f791b20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-19 19:19:41,204 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-12-19 19:19:41,205 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.8', 55552), raddr=('172.19.0.2', 5672)>
+2024-12-19 19:19:41,205 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.8', 55552), raddr=('172.19.0.2', 5672)>
+2024-12-19 19:19:41,205 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.8', 55552), raddr=('172.19.0.2', 5672)>
+2024-12-19 19:19:41,206 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-19 19:19:41,206 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-19 19:19:41,207 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.8', 55552), raddr=('172.19.0.2', 5672)>
+2024-12-19 19:19:41,207 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-12-19 19:19:41,208 - rabbitmq_utils - INFO - RabbitMQ connection closed.
+2024-12-19 19:19:41,208 - routes - INFO - User 7 successfully responded to announcement 1
+2024-12-19 19:55:16,236 - main - INFO - Announcement Service завершает работу.
+2024-12-19 20:28:27,113 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 20:29:47,016 - utils - INFO - Verifying user token
+2024-12-19 20:29:47,099 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-19 20:29:47,100 - utils - INFO - Token verified successfully
+2024-12-19 20:29:47,103 - routes - INFO - User 7 is creating an announcement: s
+2024-12-19 20:29:47,103 - utils - INFO - Adding new announcement for user 7: {'user_id': 7, 'item': 's', 'place': 's', 'type': True, 'time': datetime.datetime(2024, 12, 19, 20, 29, 33, 436000, tzinfo=TzInfo(UTC))}
+2024-12-19 20:29:47,156 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-19 20:29:47,157 - utils - INFO - Announcement added successfully with ID: 4
+2024-12-19 20:29:47,158 - routes - INFO - Announcement created with ID: 4
+2024-12-19 21:07:18,506 - main - INFO - Announcement Service завершает работу.
+2024-12-19 21:38:35,883 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-19 23:47:28,387 - main - INFO - Announcement Service завершает работу.
+2024-12-20 00:49:21,726 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 00:51:26,901 - main - INFO - Announcement Service завершает работу.
+2024-12-20 06:22:30,998 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 06:35:30,838 - main - INFO - Announcement Service завершает работу.
+2024-12-20 06:42:57,843 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 06:51:17,260 - main - INFO - Announcement Service завершает работу.
+2024-12-20 06:52:12,837 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:12:48,025 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:12:48,770 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:16:57,514 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:16:58,173 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:17:47,430 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:17:48,142 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:18:31,885 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:18:32,587 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:23:01,034 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:23:01,865 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:25:59,072 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:25:59,785 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:28:39,941 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:28:40,682 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:29:11,944 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:29:12,620 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:30:09,940 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:30:10,622 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:30:45,924 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:30:46,735 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:31:23,040 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:32:16,158 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:33:29,360 - main - INFO - Announcement Service завершает работу.
+2024-12-20 07:33:30,087 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 07:46:35,413 - routes - INFO - Fetching all announcements
+2024-12-20 07:46:35,414 - utils - INFO - Fetching all announcements from database
+2024-12-20 07:46:35,489 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-20 07:46:35,489 - utils - INFO - Announcements fetched successfully
+2024-12-20 07:47:18,152 - utils - INFO - Verifying user token
+2024-12-20 07:47:18,182 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 07:47:18,182 - utils - INFO - Token verified successfully
+2024-12-20 07:47:18,185 - routes - INFO - User 12 is creating an announcement: wallet
+2024-12-20 07:47:18,185 - utils - INFO - Adding new announcement for user 12: {'user_id': 8, 'item': 'wallet', 'place': 'park', 'type': True, 'time': datetime.datetime(2024, 12, 20, 7, 46, 52, 129000, tzinfo=TzInfo(UTC))}
+2024-12-20 07:47:18,229 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-20 07:47:18,229 - utils - INFO - Announcement added successfully with ID: 6
+2024-12-20 07:47:18,230 - routes - INFO - Announcement created with ID: 6
+2024-12-20 07:47:28,767 - routes - INFO - Fetching all announcements
+2024-12-20 07:47:28,768 - utils - INFO - Fetching all announcements from database
+2024-12-20 07:47:28,809 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-20 07:47:28,810 - utils - INFO - Announcements fetched successfully
+2024-12-20 07:48:10,579 - routes - INFO - Fetching all announcements
+2024-12-20 07:48:10,579 - utils - INFO - Fetching all announcements from database
+2024-12-20 07:48:10,630 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-20 07:48:10,631 - utils - INFO - Announcements fetched successfully
+2024-12-20 07:48:34,975 - routes - INFO - Fetching announcement with ID 3
+2024-12-20 07:48:34,975 - utils - INFO - Fetching announcement with ID 3
+2024-12-20 07:48:35,011 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/3 "HTTP/1.1 200 OK"
+2024-12-20 07:48:35,012 - utils - INFO - Announcement with ID 3 fetched successfully
+2024-12-20 07:48:59,794 - utils - INFO - Verifying user token
+2024-12-20 07:48:59,822 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 07:48:59,822 - utils - INFO - Token verified successfully
+2024-12-20 07:48:59,824 - routes - INFO - User 12 is responding to announcement 3 with message: Hello
+2024-12-20 07:48:59,824 - utils - INFO - Responding to announcement 3 by user 12
+2024-12-20 07:48:59,884 - httpx - INFO - HTTP Request: POST http://db_service:8090/responses/ "HTTP/1.1 200 OK"
+2024-12-20 07:48:59,885 - utils - INFO - Response to announcement saved successfully
+2024-12-20 07:48:59,886 - rabbitmq_utils - INFO - Connecting to RabbitMQ...
+2024-12-20 07:48:59,891 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.19.0.2', 5672)
+2024-12-20 07:48:59,892 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.7', 43690), raddr=('172.19.0.2', 5672)>
+2024-12-20 07:48:59,893 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f030f0eede0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f030f0eede0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-12-20 07:48:59,896 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f030f0eede0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-20 07:48:59,897 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f030f0eede0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-20 07:48:59,897 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f030f0eede0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-20 07:48:59,898 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-12-20 07:48:59,899 - rabbitmq_utils - INFO - Queue 'notifications' declared successfully.
+2024-12-20 07:48:59,900 - rabbitmq_utils - INFO - [RabbitMQ] Message sent to queue 'notifications': {'user_id': 3, 'responding_user_id': 12, 'announcement_id': 3, 'content': 'User 12 responded to your announcement: Hello'}
+2024-12-20 07:48:59,900 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-12-20 07:48:59,901 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f030f0eede0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-20 07:48:59,902 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f030f0eede0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-20 07:48:59,902 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-12-20 07:48:59,903 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.7', 43690), raddr=('172.19.0.2', 5672)>
+2024-12-20 07:48:59,904 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.7', 43690), raddr=('172.19.0.2', 5672)>
+2024-12-20 07:48:59,904 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.7', 43690), raddr=('172.19.0.2', 5672)>
+2024-12-20 07:48:59,904 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-20 07:48:59,905 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-20 07:48:59,905 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.7', 43690), raddr=('172.19.0.2', 5672)>
+2024-12-20 07:48:59,906 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-12-20 07:48:59,906 - rabbitmq_utils - INFO - RabbitMQ connection closed.
+2024-12-20 07:48:59,907 - routes - INFO - User 12 successfully responded to announcement 3
+2024-12-20 07:57:26,373 - main - INFO - Announcement Service завершает работу.
+2024-12-20 12:29:47,674 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 12:35:00,412 - main - INFO - Announcement Service завершает работу.
+2024-12-20 12:38:56,657 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 12:39:48,547 - main - INFO - Announcement Service завершает работу.
+2024-12-20 14:31:54,353 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-20 14:34:49,856 - routes - INFO - Fetching all announcements
+2024-12-20 14:34:49,858 - utils - INFO - Fetching all announcements from database
+2024-12-20 14:34:49,988 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-20 14:34:49,989 - utils - INFO - Announcements fetched successfully
+2024-12-20 14:39:31,423 - utils - INFO - Verifying user token
+2024-12-20 14:39:31,464 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 401 Unauthorized"
+2024-12-20 14:39:31,464 - utils - ERROR - Token verification failed: 401
+2024-12-20 14:39:45,420 - utils - INFO - Verifying user token
+2024-12-20 14:39:45,491 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 401 Unauthorized"
+2024-12-20 14:39:45,492 - utils - ERROR - Token verification failed: 401
+2024-12-20 14:40:16,703 - utils - INFO - Verifying user token
+2024-12-20 14:40:16,766 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-20 14:40:16,768 - utils - INFO - Token verified successfully
+2024-12-20 14:40:16,771 - routes - INFO - User 7 is responding to announcement 2 with message: Response
+2024-12-20 14:40:16,772 - utils - INFO - Responding to announcement 2 by user 7
+2024-12-20 14:40:16,901 - httpx - INFO - HTTP Request: POST http://db_service:8090/responses/ "HTTP/1.1 200 OK"
+2024-12-20 14:40:16,902 - utils - INFO - Response to announcement saved successfully
+2024-12-20 14:40:16,903 - rabbitmq_utils - INFO - Connecting to RabbitMQ...
+2024-12-20 14:40:16,911 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.19.0.5', 5672)
+2024-12-20 14:40:16,916 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.10', 34590), raddr=('172.19.0.5', 5672)>
+2024-12-20 14:40:16,918 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa9e062bdd0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa9e062bdd0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-12-20 14:40:16,924 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa9e062bdd0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-20 14:40:16,925 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa9e062bdd0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-20 14:40:16,925 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa9e062bdd0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-20 14:40:16,926 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-12-20 14:40:16,929 - rabbitmq_utils - INFO - Queue 'notifications' declared successfully.
+2024-12-20 14:40:16,930 - rabbitmq_utils - INFO - [RabbitMQ] Message sent to queue 'notifications': {'user_id': 2, 'responding_user_id': 7, 'announcement_id': 2, 'content': 'User 7 responded to your announcement: Response'}
+2024-12-20 14:40:16,931 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-12-20 14:40:16,931 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa9e062bdd0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-20 14:40:16,933 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fa9e062bdd0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-20 14:40:16,934 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-12-20 14:40:16,935 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.10', 34590), raddr=('172.19.0.5', 5672)>
+2024-12-20 14:40:16,936 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.10', 34590), raddr=('172.19.0.5', 5672)>
+2024-12-20 14:40:16,936 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.10', 34590), raddr=('172.19.0.5', 5672)>
+2024-12-20 14:40:16,937 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-20 14:40:16,937 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-20 14:40:16,938 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=17, family=2, type=1, proto=6, laddr=('172.19.0.10', 34590), raddr=('172.19.0.5', 5672)>
+2024-12-20 14:40:16,938 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-12-20 14:40:16,939 - rabbitmq_utils - INFO - RabbitMQ connection closed.
+2024-12-20 14:40:16,940 - routes - INFO - User 7 successfully responded to announcement 2
+2024-12-20 17:01:37,005 - main - INFO - Announcement Service завершает работу.

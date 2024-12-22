@@ -1,0 +1,113 @@
+version: '3.8'
+
+networks:
+  default:
+    driver: bridge
+
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"  # Порт для сообщений
+      - "15672:15672"  # Веб-интерфейс RabbitMQ
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  db_service:
+    networks:
+      - default
+    build:
+      context: ./db_service
+    container_name: db_service
+    ports:
+      - "8090:8090"  # Порт для взаимодействия с базой данных
+    volumes:
+      - ./db_service:/app  # Локальная папка с исходниками сервиса БД
+
+  auth_service:
+    networks:
+      - default
+    build:
+      context: ./auth_service
+    container_name: auth_service
+    ports:
+      - "8001:8001"  # Порт для аутентификации пользователей
+    volumes:
+      - ./auth_service:/app  # Локальная папка с исходниками сервиса авторизации
+    depends_on:
+      - db_service  # Сервис авторизации зависит от БД
+
+  announcement_service:
+    networks:
+      - default
+    build:
+      context: ./announcement_service
+    container_name: announcement_service
+    ports:
+      - "8033:8033"
+    depends_on:
+      - db_service
+    volumes:
+      - ./announcement_service:/app
+
+  notification_service:
+    networks:
+      - default
+    build:
+      context: ./notification_service
+    container_name: notification_service
+    depends_on:
+      - rabbitmq  # Зависимость от RabbitMQ
+    volumes:
+      - ./notification_service:/app  # Локальная папка с исходниками сервиса уведомлений
+
+  report_service:
+    networks:
+      - default
+    build:
+      context: ./report_service
+    container_name: report_service
+    ports:
+      - "8044:8044"  # Порт для отчётов и статистики
+    depends_on:
+      - db_service  # Сервис отчётов зависит от БД
+    volumes:
+      - ./report_service:/app  # Локальная папка с исходниками сервиса отчётов
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    privileged: true
+    devices:
+      - /dev/kmsg:/dev/kmsg
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    depends_on:
+      - cadvisor
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"  # Интерфейс Grafana
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+
+volumes:
+  grafana_data:

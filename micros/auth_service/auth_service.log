@@ -1,0 +1,648 @@
+2024-12-18 02:06:02,329 - routes - INFO - Registering user: 1
+2024-12-18 02:06:02,391 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-18 02:06:02,758 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 200 OK"
+2024-12-18 02:06:02,760 - routes - INFO - User registered successfully: 1
+2024-12-18 02:06:35,512 - routes - INFO - Registering user: 1
+2024-12-18 02:06:35,850 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 400 Bad Request"
+2024-12-18 02:06:35,851 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-18 02:07:10,393 - routes - INFO - User login attempt: 1
+2024-12-18 02:07:10,422 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:07:21,864 - routes - INFO - User login attempt: 1
+2024-12-18 02:07:21,905 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:08:03,486 - routes - INFO - Registering user: 1
+2024-12-18 02:08:03,811 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 400 Bad Request"
+2024-12-18 02:08:03,811 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-18 02:08:19,598 - routes - INFO - User login attempt: 1
+2024-12-18 02:08:19,627 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:08:35,694 - routes - INFO - User login attempt: 1
+2024-12-18 02:08:35,716 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:08:36,473 - routes - INFO - User login attempt: 1
+2024-12-18 02:08:36,516 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:08:37,263 - routes - INFO - User login attempt: 1
+2024-12-18 02:08:37,306 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:20:39,321 - routes - INFO - Registering user: 1
+2024-12-18 02:20:39,392 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-18 02:20:39,758 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 400 Bad Request"
+2024-12-18 02:20:39,759 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-18 02:20:53,159 - routes - INFO - Registering user: 2
+2024-12-18 02:20:53,497 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 200 OK"
+2024-12-18 02:20:53,497 - routes - INFO - User registered successfully: 2
+2024-12-18 02:21:13,782 - routes - INFO - User login attempt: 1
+2024-12-18 02:21:13,818 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:21:43,844 - routes - INFO - User login attempt: 2
+2024-12-18 02:21:43,887 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=2 "HTTP/1.1 200 OK"
+2024-12-18 02:21:46,947 - routes - INFO - User login attempt: 2
+2024-12-18 02:21:46,984 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=2 "HTTP/1.1 200 OK"
+2024-12-18 02:40:37,820 - routes - INFO - User login attempt: 1
+2024-12-18 02:40:37,902 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:40:41,155 - routes - INFO - User login attempt: 1
+2024-12-18 02:40:41,213 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 02:41:04,832 - routes - INFO - Registering user: Vadim
+2024-12-18 02:41:04,871 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-18 02:41:05,235 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 200 OK"
+2024-12-18 02:41:05,236 - routes - INFO - User registered successfully: Vadim
+2024-12-18 02:41:09,532 - routes - INFO - Registering user: Vadim
+2024-12-18 02:41:09,862 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 400 Bad Request"
+2024-12-18 02:41:09,862 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-18 02:41:28,998 - routes - INFO - User login attempt: Vadim
+2024-12-18 02:41:29,046 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=Vadim "HTTP/1.1 200 OK"
+2024-12-18 02:41:37,397 - routes - INFO - User login attempt: VADIM
+2024-12-18 02:41:37,429 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=VADIM "HTTP/1.1 404 Not Found"
+2024-12-18 02:41:37,430 - routes - WARNING - Invalid credentials for user: VADIM
+2024-12-18 03:56:17,345 - routes - INFO - User login attempt: Vadim
+2024-12-18 03:56:17,452 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=Vadim "HTTP/1.1 200 OK"
+2024-12-18 03:56:26,994 - routes - INFO - User login attempt: Vadim
+2024-12-18 03:56:27,031 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=Vadim "HTTP/1.1 200 OK"
+2024-12-18 05:37:32,006 - routes - INFO - User login attempt: 2
+2024-12-18 05:37:32,122 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=2 "HTTP/1.1 200 OK"
+2024-12-18 06:23:35,048 - routes - INFO - User login attempt: 1
+2024-12-18 06:23:35,150 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 500 Internal Server Error"
+2024-12-18 06:23:35,151 - routes - WARNING - Invalid credentials for user: 1
+2024-12-18 06:24:12,282 - routes - INFO - Registering user: 1
+2024-12-18 06:24:12,316 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-18 06:24:12,635 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 500 Internal Server Error"
+2024-12-18 06:24:41,071 - routes - INFO - User login attempt: 1
+2024-12-18 06:24:41,103 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 500 Internal Server Error"
+2024-12-18 06:24:41,104 - routes - WARNING - Invalid credentials for user: 1
+2024-12-18 06:25:28,773 - routes - INFO - User login attempt: 1
+2024-12-18 06:25:28,804 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 500 Internal Server Error"
+2024-12-18 06:25:28,806 - routes - WARNING - Invalid credentials for user: 1
+2024-12-18 06:25:40,559 - routes - INFO - Registering user: 3
+2024-12-18 06:25:40,897 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 500 Internal Server Error"
+2024-12-18 06:25:59,165 - routes - INFO - User login attempt: 3
+2024-12-18 06:25:59,196 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=3 "HTTP/1.1 500 Internal Server Error"
+2024-12-18 06:25:59,197 - routes - WARNING - Invalid credentials for user: 3
+2024-12-18 06:26:16,139 - routes - INFO - Verifying token
+2024-12-18 06:28:12,569 - routes - INFO - Verifying token
+2024-12-18 19:54:07,208 - routes - INFO - Registering user: 1
+2024-12-18 19:54:07,289 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-18 19:54:07,634 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 400 Bad Request"
+2024-12-18 19:54:07,635 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-18 19:54:17,344 - routes - INFO - Registering user: 3
+2024-12-18 19:54:17,688 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-18 19:54:17,689 - routes - INFO - User registered successfully: 3
+2024-12-18 19:54:33,589 - routes - INFO - User login attempt: 1
+2024-12-18 19:54:33,630 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-18 19:54:44,289 - routes - INFO - User login attempt: 3
+2024-12-18 19:54:44,321 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=3 "HTTP/1.1 200 OK"
+2024-12-18 19:54:53,010 - routes - INFO - User login attempt: 5
+2024-12-18 19:54:53,050 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=5 "HTTP/1.1 404 Not Found"
+2024-12-18 19:54:53,051 - routes - WARNING - Invalid credentials for user: 5
+2024-12-19 00:56:10,447 - routes - INFO - User login attempt: 3
+2024-12-19 00:56:10,579 - httpx - INFO - HTTP Request: GET http://db_service:8090/Users/by-username/?username=3 "HTTP/1.1 404 Not Found"
+2024-12-19 00:56:10,580 - routes - WARNING - Invalid credentials for user: 3
+2024-12-19 00:56:45,685 - routes - INFO - Registering user: 5
+2024-12-19 00:56:45,719 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 00:56:46,084 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-19 00:56:46,085 - routes - INFO - User registered successfully: 5
+2024-12-19 00:57:10,189 - routes - INFO - User login attempt: 5
+2024-12-19 00:57:10,215 - httpx - INFO - HTTP Request: GET http://db_service:8090/Users/by-username/?username=5 "HTTP/1.1 404 Not Found"
+2024-12-19 00:57:10,216 - routes - WARNING - Invalid credentials for user: 5
+2024-12-19 00:57:40,538 - routes - INFO - User login attempt: 5
+2024-12-19 00:57:40,573 - httpx - INFO - HTTP Request: GET http://db_service:8090/Users/by-username/?username=5 "HTTP/1.1 404 Not Found"
+2024-12-19 00:57:40,574 - routes - WARNING - Invalid credentials for user: 5
+2024-12-19 00:58:15,356 - routes - INFO - User login attempt: 5
+2024-12-19 00:58:15,417 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=5 "HTTP/1.1 200 OK"
+2024-12-19 00:58:34,362 - routes - INFO - Registering user: 5
+2024-12-19 00:58:34,396 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 00:58:34,728 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 400 Bad Request"
+2024-12-19 00:58:34,729 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-19 01:14:16,966 - routes - INFO - Registering user: 3
+2024-12-19 01:14:17,022 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 01:14:17,364 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 400 Bad Request"
+2024-12-19 01:14:17,365 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-19 01:14:44,905 - routes - INFO - User login attempt: 3
+2024-12-19 01:14:44,945 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=3 "HTTP/1.1 200 OK"
+2024-12-19 01:14:45,255 - routes - INFO - User logged in successfully: 3
+2024-12-19 01:15:27,397 - routes - INFO - Verifying token
+2024-12-19 01:15:27,398 - routes - INFO - Token verified successfully for user_id: 4
+2024-12-19 01:16:33,443 - routes - INFO - Verifying token
+2024-12-19 01:16:33,444 - routes - INFO - Token verified successfully for user_id: 4
+2024-12-19 01:16:49,755 - routes - INFO - Verifying token
+2024-12-19 01:16:49,756 - routes - INFO - Token verified successfully for user_id: 4
+2024-12-19 01:19:47,822 - routes - INFO - Verifying token
+2024-12-19 01:19:47,822 - routes - INFO - Token verified successfully for user_id: 4
+2024-12-19 01:26:43,909 - routes - INFO - User login attempt: 3
+2024-12-19 01:26:43,972 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=3 "HTTP/1.1 200 OK"
+2024-12-19 01:26:44,292 - routes - INFO - User logged in successfully: 3
+2024-12-19 01:27:18,460 - routes - INFO - Verifying token
+2024-12-19 01:27:18,461 - routes - INFO - Token verified successfully for user_id: 4
+2024-12-19 01:28:16,520 - routes - INFO - Verifying token
+2024-12-19 01:28:16,520 - routes - INFO - Token verified successfully for user_id: 4
+2024-12-19 15:42:07,253 - routes - INFO - Registering user: somebody
+2024-12-19 15:42:07,313 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 15:42:07,670 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-19 15:42:07,671 - routes - INFO - User registered successfully: somebody
+2024-12-19 15:42:33,373 - routes - INFO - User login attempt: somebody
+2024-12-19 15:42:33,410 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=somebody "HTTP/1.1 200 OK"
+2024-12-19 15:43:02,009 - routes - INFO - User login attempt: 3
+2024-12-19 15:43:02,058 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=3 "HTTP/1.1 200 OK"
+2024-12-19 15:43:39,721 - routes - INFO - Verifying token
+2024-12-19 15:50:07,034 - routes - INFO - User login attempt: somebody
+2024-12-19 15:50:07,124 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=somebody "HTTP/1.1 200 OK"
+2024-12-19 15:50:28,429 - routes - INFO - User login attempt: 1
+2024-12-19 15:50:28,483 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:18:14,825 - routes - INFO - User login attempt: 1
+2024-12-19 16:18:14,859 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:23:49,459 - routes - INFO - User login attempt: 1
+2024-12-19 16:23:49,508 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:23:49,509 - routes - ERROR - Missing 'hashed_password' in database response for user: 1
+2024-12-19 16:23:49,510 - routes - ERROR - Unexpected error: 500: Unexpected database response
+2024-12-19 16:27:22,729 - routes - INFO - User login attempt: 1
+2024-12-19 16:27:22,778 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:27:22,779 - routes - ERROR - Missing 'hashed_password' in response for user: 1
+2024-12-19 16:27:22,780 - routes - ERROR - Unexpected error: 500: Unexpected database response
+2024-12-19 16:39:47,348 - routes - INFO - User login attempt: 1
+2024-12-19 16:39:47,434 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:39:47,436 - routes - ERROR - Missing 'hashed_password' in response for user: 1
+2024-12-19 16:39:47,436 - routes - ERROR - Unexpected error: 500: Unexpected database response
+2024-12-19 16:39:52,021 - routes - INFO - User login attempt: 1
+2024-12-19 16:39:52,058 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:39:52,060 - routes - ERROR - Missing 'hashed_password' in response for user: 1
+2024-12-19 16:39:52,060 - routes - ERROR - Unexpected error: 500: Unexpected database response
+2024-12-19 16:40:06,814 - routes - INFO - User login attempt: 6
+2024-12-19 16:40:06,841 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=6 "HTTP/1.1 404 Not Found"
+2024-12-19 16:40:06,842 - routes - WARNING - User not found: 6
+2024-12-19 16:40:06,843 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:41:35,012 - routes - INFO - User login attempt: 1
+2024-12-19 16:41:35,045 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:41:35,046 - routes - ERROR - Missing 'hashed_password' in response for user: 1
+2024-12-19 16:41:35,047 - routes - ERROR - Unexpected error: 500: Unexpected database response
+2024-12-19 16:45:01,419 - routes - INFO - User login attempt: 1
+2024-12-19 16:45:01,498 - httpx - INFO - HTTP Request: GET http://db_service:8090/Users/by-username/?username=1 "HTTP/1.1 404 Not Found"
+2024-12-19 16:45:01,499 - routes - WARNING - User not found: 1
+2024-12-19 16:45:01,499 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:45:10,911 - routes - INFO - User login attempt: 1
+2024-12-19 16:45:10,939 - httpx - INFO - HTTP Request: GET http://db_service:8090/Users/by-username/?username=1 "HTTP/1.1 404 Not Found"
+2024-12-19 16:45:10,940 - routes - WARNING - User not found: 1
+2024-12-19 16:45:10,940 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:45:39,673 - routes - INFO - User login attempt: 1
+2024-12-19 16:45:39,696 - httpx - INFO - HTTP Request: GET http://db_service:8090/Users/by-username/?username=1 "HTTP/1.1 404 Not Found"
+2024-12-19 16:45:39,697 - routes - WARNING - User not found: 1
+2024-12-19 16:45:39,698 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:45:55,848 - routes - INFO - User login attempt: 7
+2024-12-19 16:45:55,871 - httpx - INFO - HTTP Request: GET http://db_service:8090/Users/by-username/?username=7 "HTTP/1.1 404 Not Found"
+2024-12-19 16:45:55,872 - routes - WARNING - User not found: 7
+2024-12-19 16:45:55,872 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:46:16,306 - routes - INFO - User login attempt: Vadim
+2024-12-19 16:46:16,335 - httpx - INFO - HTTP Request: GET http://db_service:8090/Users/by-username/?username=Vadim "HTTP/1.1 404 Not Found"
+2024-12-19 16:46:16,336 - routes - WARNING - User not found: Vadim
+2024-12-19 16:46:16,336 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:47:33,030 - routes - INFO - User login attempt: Vadim
+2024-12-19 16:47:33,099 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=Vadim "HTTP/1.1 200 OK"
+2024-12-19 16:47:33,101 - routes - ERROR - Missing 'hashed_password' in response for user: Vadim
+2024-12-19 16:47:33,101 - routes - ERROR - Unexpected error: 500: Unexpected database response
+2024-12-19 16:47:49,820 - routes - INFO - User login attempt: Vadim
+2024-12-19 16:47:49,851 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=Vadim "HTTP/1.1 200 OK"
+2024-12-19 16:47:49,852 - routes - ERROR - Missing 'hashed_password' in response for user: Vadim
+2024-12-19 16:47:49,852 - routes - ERROR - Unexpected error: 500: Unexpected database response
+2024-12-19 16:48:01,731 - routes - INFO - User login attempt: Vadim1
+2024-12-19 16:48:01,764 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=Vadim1 "HTTP/1.1 404 Not Found"
+2024-12-19 16:48:01,766 - routes - WARNING - User not found: Vadim1
+2024-12-19 16:48:01,767 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:49:30,628 - routes - INFO - User login attempt: Vadim
+2024-12-19 16:49:30,668 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=Vadim "HTTP/1.1 200 OK"
+2024-12-19 16:49:30,674 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 16:49:30,928 - routes - WARNING - Invalid password for user: Vadim
+2024-12-19 16:49:30,929 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:49:57,097 - routes - INFO - User login attempt: 1
+2024-12-19 16:49:57,127 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:49:57,365 - routes - INFO - User logged in successfully: 1
+2024-12-19 16:50:05,402 - routes - INFO - User login attempt: 2
+2024-12-19 16:50:05,430 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=2 "HTTP/1.1 200 OK"
+2024-12-19 16:50:05,665 - routes - INFO - User logged in successfully: 2
+2024-12-19 16:50:16,012 - routes - INFO - User login attempt: Vadim
+2024-12-19 16:50:16,042 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=Vadim "HTTP/1.1 200 OK"
+2024-12-19 16:50:16,282 - routes - WARNING - Invalid password for user: Vadim
+2024-12-19 16:50:16,283 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 16:50:35,984 - routes - INFO - User login attempt: somebody
+2024-12-19 16:50:36,019 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=somebody "HTTP/1.1 200 OK"
+2024-12-19 16:50:36,255 - routes - INFO - User logged in successfully: somebody
+2024-12-19 16:51:27,843 - routes - INFO - User login attempt: 5
+2024-12-19 16:51:27,870 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=5 "HTTP/1.1 200 OK"
+2024-12-19 16:51:28,104 - routes - INFO - User logged in successfully: 5
+2024-12-19 16:51:53,972 - routes - INFO - Verifying token
+2024-12-19 16:51:53,973 - routes - INFO - Token verified successfully for user_id: 5
+2024-12-19 16:52:19,596 - routes - INFO - Verifying token
+2024-12-19 16:52:19,597 - routes - INFO - Token verified successfully for user_id: 5
+2024-12-19 16:52:42,994 - routes - INFO - Verifying token
+2024-12-19 16:52:42,994 - routes - INFO - Token verified successfully for user_id: 5
+2024-12-19 16:54:00,925 - routes - INFO - User login attempt: 1
+2024-12-19 16:54:00,953 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 16:54:01,183 - routes - INFO - User logged in successfully: 1
+2024-12-19 16:54:28,526 - routes - INFO - Verifying token
+2024-12-19 16:54:28,527 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:29:52,595 - routes - INFO - User login attempt: 1
+2024-12-19 17:29:52,679 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 17:29:52,683 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 17:29:52,937 - routes - INFO - User logged in successfully: 1
+2024-12-19 17:30:10,883 - routes - INFO - Verifying token
+2024-12-19 17:30:10,884 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:30:38,229 - routes - INFO - Verifying token
+2024-12-19 17:30:59,659 - routes - INFO - Verifying token
+2024-12-19 17:30:59,660 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:31:23,988 - routes - INFO - Verifying token
+2024-12-19 17:31:23,989 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:31:32,568 - routes - INFO - Verifying token
+2024-12-19 17:31:32,569 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:32:39,598 - routes - INFO - Verifying token
+2024-12-19 17:32:39,599 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:33:09,866 - routes - INFO - Verifying token
+2024-12-19 17:33:09,866 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:51:53,985 - routes - INFO - User login attempt: 1
+2024-12-19 17:51:54,085 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 17:51:54,090 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 17:51:54,352 - routes - INFO - User logged in successfully: 1
+2024-12-19 17:52:24,038 - routes - INFO - Verifying token
+2024-12-19 17:52:24,040 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:52:33,013 - routes - INFO - Verifying token
+2024-12-19 17:52:33,014 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 17:53:18,649 - routes - INFO - Verifying token
+2024-12-19 17:53:18,650 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 18:37:03,836 - routes - INFO - User login attempt: 7
+2024-12-19 18:37:03,928 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 404 Not Found"
+2024-12-19 18:37:03,929 - routes - WARNING - User not found: 7
+2024-12-19 18:37:03,929 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-19 18:37:14,497 - routes - INFO - Registering user: 7
+2024-12-19 18:37:14,531 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 18:37:14,922 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-19 18:37:14,923 - routes - INFO - User registered successfully: 7
+2024-12-19 18:37:21,127 - routes - INFO - User login attempt: 7
+2024-12-19 18:37:21,173 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-19 18:37:21,402 - routes - INFO - User logged in successfully: 7
+2024-12-19 18:37:39,075 - routes - INFO - Verifying token
+2024-12-19 18:37:39,077 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 18:38:19,730 - routes - INFO - Verifying token
+2024-12-19 18:38:19,730 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 18:40:02,062 - routes - INFO - Verifying token
+2024-12-19 18:40:02,062 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 18:40:27,102 - routes - INFO - Verifying token
+2024-12-19 18:40:27,103 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 18:40:50,672 - routes - INFO - Verifying token
+2024-12-19 18:40:50,673 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 18:50:39,460 - routes - INFO - User login attempt: 1
+2024-12-19 18:50:39,572 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-19 18:50:39,577 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 18:50:39,916 - routes - INFO - User logged in successfully: 1
+2024-12-19 18:51:05,278 - routes - INFO - Verifying token
+2024-12-19 18:51:05,279 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-19 19:07:20,426 - routes - INFO - User login attempt: 7
+2024-12-19 19:07:20,520 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-19 19:07:20,526 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 19:07:20,864 - routes - INFO - User logged in successfully: 7
+2024-12-19 19:08:08,397 - routes - INFO - Verifying token
+2024-12-19 19:08:08,398 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:08:40,175 - routes - INFO - Verifying token
+2024-12-19 19:08:40,176 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:08:49,621 - routes - INFO - Verifying token
+2024-12-19 19:08:49,622 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:19:06,132 - routes - INFO - User login attempt: 7
+2024-12-19 19:19:06,170 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-19 19:19:06,404 - routes - INFO - User logged in successfully: 7
+2024-12-19 19:19:41,105 - routes - INFO - Verifying token
+2024-12-19 19:19:41,106 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:20:21,891 - routes - INFO - Verifying token
+2024-12-19 19:20:21,891 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:20:39,719 - routes - INFO - Verifying token
+2024-12-19 19:20:39,720 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:20:47,805 - routes - INFO - Verifying token
+2024-12-19 19:20:47,806 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:28:20,228 - routes - INFO - Verifying token
+2024-12-19 19:28:20,229 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:28:27,213 - routes - INFO - Verifying token
+2024-12-19 19:28:27,214 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:28:36,825 - routes - INFO - Verifying token
+2024-12-19 19:28:36,826 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:29:16,610 - routes - INFO - Verifying token
+2024-12-19 19:29:16,611 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:29:35,549 - routes - INFO - Verifying token
+2024-12-19 19:29:35,550 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:29:41,573 - routes - INFO - Verifying token
+2024-12-19 19:29:41,574 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 19:29:50,269 - routes - INFO - Verifying token
+2024-12-19 19:29:50,270 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 20:28:59,063 - routes - INFO - User login attempt: 7
+2024-12-19 20:28:59,157 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-19 20:28:59,162 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 20:28:59,487 - routes - INFO - User logged in successfully: 7
+2024-12-19 20:29:17,645 - routes - INFO - Verifying token
+2024-12-19 20:29:17,646 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 20:29:47,097 - routes - INFO - Verifying token
+2024-12-19 20:29:47,098 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 20:30:07,961 - routes - INFO - Verifying token
+2024-12-19 20:30:07,962 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 20:30:20,424 - routes - INFO - Verifying token
+2024-12-19 20:30:20,425 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 20:30:29,336 - routes - INFO - Verifying token
+2024-12-19 20:30:29,338 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 21:39:13,804 - routes - INFO - User login attempt: 7
+2024-12-19 21:39:13,905 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-19 21:39:13,911 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-19 21:39:14,227 - routes - INFO - User logged in successfully: 7
+2024-12-19 21:39:39,570 - routes - INFO - Verifying token
+2024-12-19 21:39:39,571 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 21:50:14,511 - routes - INFO - Verifying token
+2024-12-19 21:50:14,512 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-19 21:50:29,731 - routes - INFO - User login attempt: 7
+2024-12-19 21:50:29,765 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-19 21:50:30,074 - routes - INFO - User logged in successfully: 7
+2024-12-19 22:01:08,430 - routes - INFO - User login attempt: 7
+2024-12-19 22:01:08,461 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-19 22:01:08,752 - routes - INFO - User logged in successfully: 7
+2024-12-20 00:49:59,016 - routes - INFO - User login attempt: 1
+2024-12-20 00:49:59,111 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-20 00:49:59,117 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-20 00:49:59,465 - routes - INFO - User logged in successfully: 1
+2024-12-20 00:50:22,217 - routes - INFO - Verifying token
+2024-12-20 00:50:22,218 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 00:50:35,709 - routes - INFO - Verifying token
+2024-12-20 00:50:35,710 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 00:50:40,169 - routes - INFO - Verifying token
+2024-12-20 00:50:40,170 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 00:50:53,642 - routes - INFO - Verifying token
+2024-12-20 00:50:53,643 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 00:51:13,015 - routes - INFO - Verifying token
+2024-12-20 00:51:13,016 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 06:28:27,262 - routes - INFO - Verifying token
+2024-12-20 06:28:27,263 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 06:28:27,889 - routes - INFO - Verifying token
+2024-12-20 06:46:53,223 - routes - INFO - Registering user: testuser
+2024-12-20 06:46:53,282 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-20 06:46:53,627 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-20 06:46:53,628 - routes - INFO - User registered successfully: testuser
+2024-12-20 06:46:53,933 - routes - INFO - User login attempt: testuser
+2024-12-20 06:46:53,970 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser "HTTP/1.1 200 OK"
+2024-12-20 06:46:54,263 - routes - INFO - User logged in successfully: testuser
+2024-12-20 06:46:54,594 - routes - INFO - Verifying token
+2024-12-20 06:46:54,595 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 06:46:54,928 - routes - INFO - User login attempt: wrong
+2024-12-20 06:46:54,956 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 06:46:54,957 - routes - WARNING - User not found: wrong
+2024-12-20 06:46:54,958 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-20 06:46:55,318 - routes - INFO - Verifying token
+2024-12-20 06:48:58,721 - routes - INFO - User login attempt: wrong
+2024-12-20 06:48:58,753 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 06:48:58,753 - routes - WARNING - User not found: wrong
+2024-12-20 06:48:58,754 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-20 06:49:12,924 - routes - INFO - User login attempt: 1
+2024-12-20 06:49:12,962 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-20 06:49:13,257 - routes - WARNING - Invalid password for user: 1
+2024-12-20 06:49:13,258 - routes - ERROR - Unexpected error: 401: Invalid credentials
+2024-12-20 06:49:26,673 - routes - INFO - User login attempt: 1
+2024-12-20 06:49:26,730 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=1 "HTTP/1.1 200 OK"
+2024-12-20 06:49:27,041 - routes - INFO - User logged in successfully: 1
+2024-12-20 06:52:34,073 - routes - INFO - User login attempt: wrong
+2024-12-20 06:52:34,223 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 06:52:34,224 - routes - WARNING - User not found: wrong
+2024-12-20 06:52:50,861 - routes - INFO - Registering user: testuser
+2024-12-20 06:52:50,885 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-20 06:52:51,201 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 400 Bad Request"
+2024-12-20 06:52:51,202 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-20 06:52:51,579 - routes - INFO - User login attempt: testuser
+2024-12-20 06:52:51,608 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser "HTTP/1.1 200 OK"
+2024-12-20 06:52:51,899 - routes - INFO - User logged in successfully: testuser
+2024-12-20 06:52:52,244 - routes - INFO - Verifying token
+2024-12-20 06:52:52,244 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 06:52:52,574 - routes - INFO - User login attempt: wrong
+2024-12-20 06:52:52,603 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 06:52:52,603 - routes - WARNING - User not found: wrong
+2024-12-20 06:52:52,917 - routes - INFO - Verifying token
+2024-12-20 06:55:00,963 - routes - INFO - Registering user: testuser2
+2024-12-20 06:55:01,303 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-20 06:55:01,304 - routes - INFO - User registered successfully: testuser2
+2024-12-20 06:55:01,628 - routes - INFO - User login attempt: testuser2
+2024-12-20 06:55:01,654 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser2 "HTTP/1.1 200 OK"
+2024-12-20 06:55:01,934 - routes - INFO - User logged in successfully: testuser2
+2024-12-20 06:55:02,299 - routes - INFO - Verifying token
+2024-12-20 06:55:02,299 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 06:55:02,615 - routes - INFO - User login attempt: wrong
+2024-12-20 06:55:02,644 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 06:55:02,645 - routes - WARNING - User not found: wrong
+2024-12-20 06:55:02,965 - routes - INFO - Verifying token
+2024-12-20 07:08:45,693 - routes - INFO - Registering user: testuser3
+2024-12-20 07:08:46,021 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-20 07:08:46,022 - routes - INFO - User registered successfully: testuser3
+2024-12-20 07:08:46,339 - routes - INFO - User login attempt: testuser3
+2024-12-20 07:08:46,370 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser3 "HTTP/1.1 200 OK"
+2024-12-20 07:08:46,653 - routes - INFO - User logged in successfully: testuser3
+2024-12-20 07:08:46,951 - routes - INFO - Verifying token
+2024-12-20 07:08:46,951 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 07:08:47,250 - routes - INFO - User login attempt: wrong
+2024-12-20 07:08:47,278 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 07:08:47,279 - routes - WARNING - User not found: wrong
+2024-12-20 07:08:47,580 - routes - INFO - Verifying token
+2024-12-20 07:13:14,651 - routes - INFO - Registering user: testuser3
+2024-12-20 07:13:14,962 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 400 Bad Request"
+2024-12-20 07:13:14,963 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-20 07:13:15,284 - routes - INFO - User login attempt: testuser3
+2024-12-20 07:13:15,312 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser3 "HTTP/1.1 200 OK"
+2024-12-20 07:13:15,593 - routes - INFO - User logged in successfully: testuser3
+2024-12-20 07:13:15,928 - routes - INFO - Verifying token
+2024-12-20 07:13:15,929 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 07:13:16,228 - routes - INFO - User login attempt: wrong
+2024-12-20 07:13:16,259 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 07:13:16,259 - routes - WARNING - User not found: wrong
+2024-12-20 07:13:16,579 - routes - INFO - Verifying token
+2024-12-20 07:42:55,445 - routes - INFO - Registering user: testuser3
+2024-12-20 07:42:55,497 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-20 07:42:55,886 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 400 Bad Request"
+2024-12-20 07:42:55,887 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-20 07:42:56,265 - routes - INFO - User login attempt: testuser3
+2024-12-20 07:42:56,293 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser3 "HTTP/1.1 200 OK"
+2024-12-20 07:42:56,575 - routes - INFO - User logged in successfully: testuser3
+2024-12-20 07:42:56,903 - routes - INFO - Verifying token
+2024-12-20 07:42:56,903 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 07:42:57,205 - routes - INFO - User login attempt: wrong
+2024-12-20 07:42:57,233 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 07:42:57,233 - routes - WARNING - User not found: wrong
+2024-12-20 07:42:57,544 - routes - INFO - Verifying token
+2024-12-20 07:44:23,000 - routes - INFO - Registering user: testuser4
+2024-12-20 07:44:23,343 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-20 07:44:23,344 - routes - INFO - User registered successfully: testuser4
+2024-12-20 07:44:23,656 - routes - INFO - User login attempt: testuser4
+2024-12-20 07:44:23,684 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser4 "HTTP/1.1 200 OK"
+2024-12-20 07:44:23,963 - routes - INFO - User logged in successfully: testuser4
+2024-12-20 07:44:24,279 - routes - INFO - Verifying token
+2024-12-20 07:44:24,279 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 07:44:24,588 - routes - INFO - User login attempt: wrong
+2024-12-20 07:44:24,621 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 07:44:24,622 - routes - WARNING - User not found: wrong
+2024-12-20 07:44:24,974 - routes - INFO - Verifying token
+2024-12-20 07:45:05,357 - routes - INFO - Registering user: user
+2024-12-20 07:45:05,713 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-20 07:45:05,714 - routes - INFO - User registered successfully: user
+2024-12-20 07:45:26,979 - routes - INFO - User login attempt: auth
+2024-12-20 07:45:27,015 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=auth "HTTP/1.1 404 Not Found"
+2024-12-20 07:45:27,016 - routes - WARNING - User not found: auth
+2024-12-20 07:45:40,121 - routes - INFO - User login attempt: user
+2024-12-20 07:45:40,187 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=user "HTTP/1.1 200 OK"
+2024-12-20 07:45:40,480 - routes - INFO - User logged in successfully: user
+2024-12-20 07:46:01,284 - routes - INFO - Verifying token
+2024-12-20 07:46:01,285 - routes - INFO - Token verified successfully for user_id: 12
+2024-12-20 07:47:18,180 - routes - INFO - Verifying token
+2024-12-20 07:47:18,180 - routes - INFO - Token verified successfully for user_id: 12
+2024-12-20 07:48:59,819 - routes - INFO - Verifying token
+2024-12-20 07:48:59,820 - routes - INFO - Token verified successfully for user_id: 12
+2024-12-20 07:50:39,804 - routes - INFO - Verifying token
+2024-12-20 07:50:39,804 - routes - INFO - Token verified successfully for user_id: 12
+2024-12-20 07:50:45,657 - routes - INFO - Verifying token
+2024-12-20 07:50:45,657 - routes - INFO - Token verified successfully for user_id: 12
+2024-12-20 07:51:10,696 - routes - INFO - Verifying token
+2024-12-20 07:51:10,697 - routes - INFO - Token verified successfully for user_id: 12
+2024-12-20 14:33:16,909 - routes - INFO - User login attempt: 7
+2024-12-20 14:33:17,058 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-20 14:33:17,071 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-20 14:33:17,499 - routes - INFO - User logged in successfully: 7
+2024-12-20 14:39:31,462 - routes - INFO - Verifying token
+2024-12-20 14:39:45,489 - routes - INFO - Verifying token
+2024-12-20 14:39:54,089 - routes - INFO - User login attempt: 7
+2024-12-20 14:39:54,207 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=7 "HTTP/1.1 200 OK"
+2024-12-20 14:39:54,639 - routes - INFO - User logged in successfully: 7
+2024-12-20 14:40:16,763 - routes - INFO - Verifying token
+2024-12-20 14:40:16,764 - routes - INFO - Token verified successfully for user_id: 7
+2024-12-20 14:47:07,872 - routes - INFO - Registering user: testuser0
+2024-12-20 14:47:08,297 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-20 14:47:08,298 - routes - INFO - User registered successfully: testuser0
+2024-12-20 14:47:08,737 - routes - INFO - User login attempt: testuser0
+2024-12-20 14:47:08,775 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser0 "HTTP/1.1 200 OK"
+2024-12-20 14:47:09,152 - routes - INFO - User logged in successfully: testuser0
+2024-12-20 14:47:09,542 - routes - INFO - Verifying token
+2024-12-20 14:47:09,542 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 14:47:09,942 - routes - INFO - User login attempt: wrong
+2024-12-20 14:47:09,983 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 14:47:09,984 - routes - WARNING - User not found: wrong
+2024-12-20 14:47:10,389 - routes - INFO - Verifying token
+2024-12-20 14:47:29,128 - routes - INFO - Registering user: testuser0
+2024-12-20 14:47:29,577 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 400 Bad Request"
+2024-12-20 14:47:29,578 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-12-20 14:47:30,055 - routes - INFO - User login attempt: testuser0
+2024-12-20 14:47:30,091 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser0 "HTTP/1.1 200 OK"
+2024-12-20 14:47:30,467 - routes - INFO - User logged in successfully: testuser0
+2024-12-20 14:47:30,905 - routes - INFO - Verifying token
+2024-12-20 14:47:30,907 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 14:47:31,328 - routes - INFO - User login attempt: wrong
+2024-12-20 14:47:31,369 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 14:47:31,370 - routes - WARNING - User not found: wrong
+2024-12-20 14:47:31,786 - routes - INFO - Verifying token
+2024-12-20 14:48:41,242 - routes - INFO - Registering user: testuser1
+2024-12-20 14:48:41,679 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-20 14:48:41,680 - routes - INFO - User registered successfully: testuser1
+2024-12-20 14:48:42,106 - routes - INFO - User login attempt: testuser7
+2024-12-20 14:48:42,146 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=testuser7 "HTTP/1.1 404 Not Found"
+2024-12-20 14:48:42,147 - routes - WARNING - User not found: testuser7
+2024-12-20 14:48:42,665 - routes - INFO - Verifying token
+2024-12-20 14:48:42,666 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-20 14:48:43,084 - routes - INFO - User login attempt: wrong
+2024-12-20 14:48:43,125 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-12-20 14:48:43,126 - routes - WARNING - User not found: wrong
+2024-12-20 14:48:43,530 - routes - INFO - Verifying token
