@@ -319,3 +319,5 @@
 2024-12-22 17:05:48,121 - utils - INFO - Announcement added successfully with ID: 7
 2024-12-22 17:05:48,121 - routes - INFO - Announcement created with ID: 7
 2024-12-22 17:08:04,365 - main - INFO - Announcement Service завершает работу.
+2024-12-22 22:05:01,103 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-22 22:06:12,504 - main - INFO - Announcement Service завершает работу.
