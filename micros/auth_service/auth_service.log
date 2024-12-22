@@ -646,3 +646,20 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2024-12-20 14:48:43,125 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
 2024-12-20 14:48:43,126 - routes - WARNING - User not found: wrong
 2024-12-20 14:48:43,530 - routes - INFO - Verifying token
+2024-12-22 17:03:53,835 - routes - INFO - Registering user: 8
+2024-12-22 17:03:53,914 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-22 17:03:54,282 - httpx - INFO - HTTP Request: POST http://db_service:8090/users/ "HTTP/1.1 200 OK"
+2024-12-22 17:03:54,283 - routes - INFO - User registered successfully: 8
+2024-12-22 17:04:09,561 - routes - INFO - User login attempt: 8
+2024-12-22 17:04:09,601 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=8 "HTTP/1.1 200 OK"
+2024-12-22 17:04:09,893 - routes - INFO - User logged in successfully: 8
+2024-12-22 17:04:34,694 - routes - INFO - Verifying token
+2024-12-22 17:04:34,694 - routes - INFO - Token verified successfully for user_id: 15
+2024-12-22 17:05:18,578 - routes - INFO - Verifying token
+2024-12-22 17:05:48,069 - routes - INFO - Verifying token
+2024-12-22 17:05:48,069 - routes - INFO - Token verified successfully for user_id: 15

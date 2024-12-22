@@ -306,3 +306,16 @@
 2024-12-20 14:40:16,939 - rabbitmq_utils - INFO - RabbitMQ connection closed.
 2024-12-20 14:40:16,940 - routes - INFO - User 7 successfully responded to announcement 2
 2024-12-20 17:01:37,005 - main - INFO - Announcement Service завершает работу.
+2024-12-22 17:02:59,604 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-22 17:05:18,489 - utils - INFO - Verifying user token
+2024-12-22 17:05:18,580 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 401 Unauthorized"
+2024-12-22 17:05:18,581 - utils - ERROR - Token verification failed: 401
+2024-12-22 17:05:48,046 - utils - INFO - Verifying user token
+2024-12-22 17:05:48,071 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-22 17:05:48,072 - utils - INFO - Token verified successfully
+2024-12-22 17:05:48,075 - routes - INFO - User 15 is creating an announcement: soul
+2024-12-22 17:05:48,075 - utils - INFO - Adding new announcement for user 15: {'user_id': 15, 'item': 'soul', 'place': 'world', 'type': False, 'time': datetime.datetime(2024, 12, 22, 17, 4, 47, 442000, tzinfo=TzInfo(UTC))}
+2024-12-22 17:05:48,120 - httpx - INFO - HTTP Request: POST http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-22 17:05:48,121 - utils - INFO - Announcement added successfully with ID: 7
+2024-12-22 17:05:48,121 - routes - INFO - Announcement created with ID: 7
+2024-12-22 17:08:04,365 - main - INFO - Announcement Service завершает работу.
