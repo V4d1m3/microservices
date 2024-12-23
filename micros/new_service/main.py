@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from prometheus_fastapi_instrumentator import Instrumentator
 
-app = FastAPI()
+app = FastAPI(title="New Service")
 
-@app.get("/")
-def read_root():
-    return {"message": "Hello, World!"}
+Instrumentator().instrument(app).expose(app)
