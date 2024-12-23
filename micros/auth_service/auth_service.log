@@ -663,3 +663,16 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2024-12-22 17:05:18,578 - routes - INFO - Verifying token
 2024-12-22 17:05:48,069 - routes - INFO - Verifying token
 2024-12-22 17:05:48,069 - routes - INFO - Token verified successfully for user_id: 15
+2024-12-23 00:26:07,035 - routes - INFO - User login attempt: somebody
+2024-12-23 00:26:07,120 - httpx - INFO - HTTP Request: GET http://db_service:8090/users/by-username/?username=somebody "HTTP/1.1 200 OK"
+2024-12-23 00:26:07,125 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-23 00:26:07,449 - routes - INFO - User logged in successfully: somebody
+2024-12-23 00:26:25,259 - routes - INFO - Verifying token
+2024-12-23 00:26:25,260 - routes - INFO - Token verified successfully for user_id: 6
+2024-12-23 00:57:38,694 - routes - INFO - Verifying token
+2024-12-23 00:58:05,837 - routes - INFO - Verifying token

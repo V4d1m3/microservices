@@ -88,7 +88,12 @@ services:
       - ./report_service:/app  # Локальная папка с исходниками сервиса отчётов
 
   cadvisor:
+
+    networks:
+      - default
+
     image: gcr.io/cadvisor/cadvisor:latest
+
     container_name: cadvisor
     ports:
       - "8080:8080"
@@ -102,7 +107,12 @@ services:
       - /dev/kmsg:/dev/kmsg
 
   prometheus:
+
+    networks:
+      - default
+
     image: prom/prometheus:latest
+
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
@@ -111,7 +121,11 @@ services:
       - cadvisor
 
   grafana:
+    networks:
+      - default
+
     image: grafana/grafana:latest
+
     ports:
       - "3000:3000"  # Интерфейс Grafana
     volumes:

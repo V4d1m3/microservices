@@ -325,3 +325,17 @@
 2024-12-22 22:23:27,263 - main - INFO - Announcement Service завершает работу.
 2024-12-22 22:23:40,893 - main - INFO - Announcement Service запущен и готов к работе.
 2024-12-22 22:24:24,222 - main - INFO - Announcement Service завершает работу.
+2024-12-23 00:17:07,885 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-23 00:17:22,360 - main - INFO - Announcement Service завершает работу.
+2024-12-23 00:24:18,401 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-23 00:27:50,299 - main - INFO - Announcement Service завершает работу.
+2024-12-23 00:29:05,508 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-23 00:48:22,627 - main - INFO - Announcement Service завершает работу.
+2024-12-23 00:48:45,742 - main - INFO - Announcement Service запущен и готов к работе.
+2024-12-23 00:58:05,757 - utils - INFO - Verifying user token
+2024-12-23 00:58:05,840 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 401 Unauthorized"
+2024-12-23 00:58:05,841 - utils - ERROR - Token verification failed: 401
+2024-12-23 00:58:26,393 - routes - INFO - Fetching all announcements
+2024-12-23 00:58:26,404 - utils - INFO - Fetching all announcements from database
+2024-12-23 00:58:26,455 - httpx - INFO - HTTP Request: GET http://db_service:8090/announcements/ "HTTP/1.1 200 OK"
+2024-12-23 00:58:26,456 - utils - INFO - Announcements fetched successfully
